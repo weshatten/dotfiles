@@ -12,7 +12,7 @@ source $ZSH/oh-my-zsh.sh
 # git
 alias gs="git status --short"
 alias gss="git status"
-alias gl="git log"
+alias gl='git log --pretty=format:"%h - %ar, %an : %s" --graph'
 alias gco="git checkout"
 alias gcob="git checkout -b"
 alias gp="git pull"
