@@ -23,3 +23,7 @@ alias gd="git diff"
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# compact prompt
+PS1="%{$fg[blue]%}%n%{$reset_color%}@%{$fg[red]%}%M%{$reset_color%}:%{$fg[blue]%}%c%{$reset_color%}$(git_time_since_commit)$(check_git_prompt_info)
+$ "
