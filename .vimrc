@@ -44,6 +44,12 @@ set ttimeoutlen=100
 " clear the search buffer when hitting return
 :nnoremap <CR> :nohlsearch<cr>
 
+" quicker window switching
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 let mapleader=","
 
 " Command T
@@ -53,9 +59,6 @@ map <leader>f :CommandT<cr>
 map <leader>F :CommandT %%<cr>
 
 " Toggle between last open buffers
-nnoremap <leader><leader> <c-^>
-
-" toggle between last open buffers
 nnoremap <leader><leader> <c-^>
 
 if has("statusline") && !&cp
